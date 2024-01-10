@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <title>{{ $post->title }} - Car Rental Website</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+        <!-- ... (your existing header code) ... -->
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading about-heading header-text"
+        style="background-image: url(assets/images/heading-6-1920x500.jpg);">
+        <!-- ... (your existing page heading code) ... -->
+    </div>
+
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>{{ $post->title }}</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <p>{{ $post->content }}</p>
+                    <!-- Add other content from the blog post as needed -->
+                </div>
+
+                <div class="col-md-4">
+                    <div class="left-content">
+                        <h4>Additional Information</h4>
+                        <!-- Add relevant information from the blog post -->
+                        <p><strong>User:</strong> {{ $post->user->username }}</p>
+                        <p><strong>Game:</strong> {{ $post->game->title }}</p>
+                        <p><strong>Category:</strong> {{ $post->category->name }}</p>
+
+                        <!-- ... (your existing left-content code) ... -->
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <img src="{{ asset('assets/images/blog-image-fullscren-1-1920x700.jpg') }}" class="img-fluid"
+                    alt="Blog Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- ... (your existing send-message and footer code) ... -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+</body>
+
+</html>

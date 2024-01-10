@@ -1,0 +1,28 @@
+.input-group-text {
+    cursor: pointer;
+}
+
+#password {
+    
+    padding-right: 30px;
+}
+ul.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+ul.pagination li {
+    display: inline;
+    padding: 5px;
+}
+ul.pagination li:first-child a {
+    font-size: 12px; /* Điều chỉnh kích thước font */
+    padding: 6px 12px; /* Điều chỉnh kích thước padding */
+}
+ul.pagination li a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+}
